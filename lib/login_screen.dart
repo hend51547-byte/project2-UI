@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_flutter_project/home_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const new({super.key});
@@ -80,16 +81,32 @@ class LoginScreen extends StatelessWidget {
               ),
               SizedBox(height: 30),
 
-              Container(
-                padding: EdgeInsets.symmetric(vertical: 24.5),
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(19),
-                  color: Color(0xff53B175),
-                ),
+              InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return HomeScreen();
+                      },
+                    ),
+                  );
+                },
 
-                child: Center(
-                  child: Text("Log In", style: TextStyle(color: Colors.white)),
+                child: Container(
+                  padding: EdgeInsets.symmetric(vertical: 24.5),
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(19),
+                    color: Color(0xff53B175),
+                  ),
+
+                  child: Center(
+                    child: Text(
+                      "Log In",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
                 ),
               ),
               SizedBox(height: 25),
