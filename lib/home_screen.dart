@@ -63,6 +63,7 @@ class HomeScreen extends StatelessWidget {
                   image: ['assets/banana.png', "assets/apple.png"],
                   boldText: ["Organic Banana", "Red Apple"],
                   secondText: ["7pcs, Priceg", " 1kg, Priceg"],
+                  thirdText: ["\$4.99","\$4.99"],
                 ),
 
                 SizedBox(height: 30),
@@ -76,6 +77,7 @@ class HomeScreen extends StatelessWidget {
                   boldText: ["Red Pepper", "Organic Genger"],
 
                   secondText: ["1kg, Priceg", "1kg, Priceg"],
+                  thirdText: ["\$4.99","\$4.99"],
                 ),
 
                 SizedBox(height: 30),
@@ -96,6 +98,7 @@ class HomeScreen extends StatelessWidget {
                   boldText: ["Beef Bone", "Broile Chicken"],
 
                   secondText: ["1kg, Priceg", "1kg, Pri"],
+                  thirdText: ["\$4.99","\$4.99"],
                 ),
               ],
             ),

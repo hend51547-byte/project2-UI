@@ -4,12 +4,14 @@ class CustomListView extends StatelessWidget {
   final List<String> boldText;
   final List<String> image;
   final List<String> secondText;
+  final List<String> thirdText;
 
   const CustomListView({
     super.key,
     required this.image,
     required this.boldText,
     required this.secondText,
+    required this.thirdText,
   });
 
   @override
@@ -56,7 +58,7 @@ class CustomListView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "\$4.99",
+                      thirdText[index],
                       style: TextStyle(
                         color: Color(0xff181725),
                         fontWeight: FontWeight(600),
